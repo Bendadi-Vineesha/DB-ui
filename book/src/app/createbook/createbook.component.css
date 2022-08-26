@@ -1,0 +1,27 @@
+h5{
+    color: rgb(11, 55, 185);
+}
+label{
+    color: rgb(43, 23, 221);
+    font-size: 20px;
+}
+input{
+    color:black;
+}
+input[type="text"], textarea {
+    background-color : #a2d2ee; 
+    border-top-color: black;
+    border-bottom-color: black;
+    border-right-color: blue;
+    border-left-color: blue;
+}
+button{
+    border-color: black;
+}
+select{
+    background-color : #a2d2ee; 
+    border-top-color: black;
+    border-bottom-color: black;
+    border-right-color: blue;
+    border-left-color: blue;
+}

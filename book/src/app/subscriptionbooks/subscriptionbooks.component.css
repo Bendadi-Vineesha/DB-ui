@@ -1,0 +1,17 @@
+label{
+    color: rgb(38, 24, 238);
+   font-size: 20px;
+}
+input[type="text"], textarea {
+    background-color : #a2d2ee; 
+    border-top-color: black;
+    border-bottom-color: black;
+    border-right-color: blue;
+    border-left-color: blue;
+}
+button{
+    border-color: black;
+}
+h1{
+    color: darkblue;
+}

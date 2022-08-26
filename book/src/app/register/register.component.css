@@ -1,0 +1,36 @@
+button{
+    color:black;
+    background-color:rgb(6, 135, 241);
+  }
+  body {
+      background-color: lightblue;
+    }
+    h4{
+      text-align: center;
+      /* background-color: lightblue; */
+      color:rgb(18, 18, 196);
+      border-radius: size*3;
+      padding: size;
+      font-family: fontFam;
+      font-size: 1.2em;
+  }
+  h1{
+    color: red;
+  }
+  label{
+    color: rgb(18, 18, 196);
+    font-size: 20px;
+  }
+  input{
+    color: green;
+  }
+  input[type="text"], textarea {
+    background-color : #a2d2ee; 
+    border-top-color: black;
+    border-bottom-color: black;
+    border-right-color: blue;
+    border-left-color: blue;
+}
+button{
+    border-color: black;
+}

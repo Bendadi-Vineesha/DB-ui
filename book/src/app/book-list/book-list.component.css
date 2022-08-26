@@ -1,0 +1,20 @@
+p{
+    color: #ff000d;
+}
+h6{
+    color:darkblue;
+}
+h2{
+    color: rgb(17, 0, 255);
+}
+
+table, th, td {
+    border: 1px solid rgb(37, 19, 116);
+    border-radius: 10px;
+}
+h5{
+    color:purple;
+}
+h4{
+    color:rgb(70, 6, 70)
+}

@@ -1,0 +1,63 @@
+<!-- <p>getsubscribebooksofreader works!</p> -->
+<div class="container">
+    <h3>GetSubscribedBooks</h3>
+    <form (ngSubmit)="getsubscribebooksbyreader()">
+        <div class ="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" class="form-control"  [(ngModel)]="data.subscriberEmail" >
+        </div>
+        <pre></pre>
+        <button class="btn btn-primary" type="getsubscribedbooks">getBooks</button>
+    </form>
+</div>
+<div>
+    <br>
+    <br>
+<table class = "table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Publisher</th>
+            <th>PublishedDate</th>
+            <th>isBlocked</th>
+            <!-- <th>Content</th> -->
+            <th>Author</th>
+            <th>EmailAddress</th>
+            <th>Price</th>
+            <th>Actions</th>
+            <th>View</th>
+        </tr>
+    </thead>
+    <tbody>
+          <tr *ngFor="let b of booksubscribed">
+            <td>{{b.id}}</td>
+            <td>{{b.title}}</td>
+            <td>{{b.category}}</td>
+            <td>{{b.publisher}}</td>
+            <td>{{b.publishedDate}}</td>
+            <td>{{b.isBlocked}}</td>
+            <!-- <td>{{b.content}}</td> -->
+            <td>{{b.author}}</td>
+           <td>{{b.emailAddress}}</td>
+            <td>{{b.price}}</td>
+            <td>
+                <button (click)="unsubscribeBook(b.id)" class="btn btn-primary">unsubscribe</button>
+            </td>
+            <td>
+                <button (click)="ReadBook(b.content)" class="btn btn-primary">Read</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- <p *ngIf="flag">BookData</p>
+   <h4>{{contentOfBook}}</h4>
+</div> -->
+<p *ngIf="flag">BookData</p>
+   <h4>{{contentOfBook}}</h4>
+</div>
+<!-- <div *ngIf="message" class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Sorry!! this book is blocked by author</p>
+  </div> -->

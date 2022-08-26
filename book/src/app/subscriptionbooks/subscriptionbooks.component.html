@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>booksubscription</h1>
+    <form (ngSubmit)="subscribeBook()">
+        <div class ="form-group">
+            <label for="subscriberName">SubscriberName</label>
+            <input type="text" name="subscriberName" class="form-control" [(ngModel)]="data.subscriberName">
+        </div>
+        <pre></pre>
+        <div class ="form-group">
+            <label for="subscriberEmail">SubscriberEmail</label>
+            <input type="text" name="subscriberEmail" class="form-control" [(ngModel)]="data.subscriberEmail">
+        </div>
+        <pre></pre>
+        <div class ="form-group">
+            <label for="bookid">BookId</label>
+            <input type="text" name="bookId" class="form-control" [(ngModel)]="data.book_Id">
+        </div>
+        <pre></pre>
+        <button class="btn btn-primary" type="subscribe">subscribe</button>
+    </form>
+    <div *ngIf="flag" class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>saved subscribed details succesfully</p>
+      </div>
+          
+</div>
+

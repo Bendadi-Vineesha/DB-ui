@@ -1,0 +1,35 @@
+<!-- <p>book-list works!</p> -->
+<div class = "row">
+    <h2> Book List</h2>
+</div>
+
+<table class = "table table-striped table-bordered" >
+    <thead>
+        <tr>
+            <th><p><b>Id</b></p></th>
+            <th><p><b>Title</b></p></th>
+            <th><p><b>Category</b></p></th>
+            <th><p><b>Publisher</b><p></th>
+            <th><p><b>PublishedDate</b></p></th>
+            <th><p><b>Author</b></p></th>
+            <th><p><b>isBlocked</b></p></th>
+            <th><p><b>Content</b></p></th>
+             <th><p><b>EmailAddress</b></p></th>
+            <th><p><b>Price</b></p></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let book of books" >
+            <td><h4>{{book.id}}</h4></td>
+            <td><h6>{{book.title}}</h6></td>
+            <td><h6>{{book.category}}</h6></td>
+            <td><h6>{{book.publisher}}</h6></td>
+            <td><h6>{{book.publishedDate}}</h6></td>
+            <td><h6>{{book.author}}</h6></td>
+             <td><h5>{{book.isBlocked}}</h5></td> 
+            <td><h6>{{book.content}}</h6></td>
+             <td><h6>{{book.emailAddress}}</h6></td>
+            <td><h6>{{book.price}}</h6></td>
+        </tr>
+    </tbody>
+</table>

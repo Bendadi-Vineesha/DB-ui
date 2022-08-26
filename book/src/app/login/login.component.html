@@ -1,0 +1,21 @@
+<h1>Login</h1>
+<div class="container">
+ <form (ngSubmit)="generatetoken()">
+        <div class ="form-group">
+            <label for="userName">userName</label>
+         <input type="text" name="username" class="form-control" [(ngModel)]="data.username">
+        </div>
+        <pre></pre>
+        <div class ="form-group">
+            <label for="password">password</label>
+            <input type="text" name="password" class="form-control" [(ngModel)]="data.password">
+        </div>
+        <pre></pre>
+        <button class="btn btn-primary" type="login">login</button>
+    </form>
+</div>
+<div *ngIf="message" class="alert alert-success" role="alert">
+    <!-- <h4 class="alert-heading">Well done!</h4> -->
+    <p>login successfully</p>
+  </div>
+

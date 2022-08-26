@@ -1,0 +1,175 @@
+<form (ngSubmit)="createBook()">
+    <div class ="form-group">
+        <label for="author">author</label>
+        <input type="text" name="author" class="form-control" [(ngModel)]="data.author">
+    </div>
+    <pre></pre>
+    <div class ="form-group">
+        <label for="category">category</label>
+        <select id="category" name="category" [(ngModel)]="data.category" class="form-control">
+          <option value="fantasy">fantasy</option>
+          <option value="triller">triller</option>
+          <option value="devotional">devotional</option>
+          <option value="historical">historical</option>
+          <option value="love">love</option>
+          <option value="twist">twist</option>
+        </select>
+        <!-- <input type="text" name="category" class="form-control" [(ngModel)]="data.category"> -->
+    </div>
+  
+    <div class ="form-group">
+        <label for="publisher">publisher</label>
+        <input type="text" name="publisher" class="form-control" [(ngModel)]="data.publisher">
+    </div>
+    <div class ="form-group">
+        <label for="title">title</label>
+        <input type="text" name="title" class="form-control" [(ngModel)]="data.title">
+    </div>
+    <div class ="form-group">
+        <label for="isblocked">isblocked</label>
+        <select id="isblocked" name="isblocked" [(ngModel)]="data.isBlocked" class="form-control">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+        <!-- <input type="text" name="isblocked" class="form-control" [(ngModel)]="data.isBlocked"> -->
+    </div>
+    <div class ="form-group">
+        <label for="publishedDate">publisheddate</label>
+        <input type="text" name="publishedDate" class="form-control" [(ngModel)]="data.publishedDate">
+    </div>
+    <div class ="form-group">
+        <label for="email">email</label>
+        <input type="text" name="email" class="form-control" [(ngModel)]="data.emailAddress">
+    </div>
+    <div class ="form-group">
+        <label for="content">content</label>
+        <input type="text" name="content" class="form-control" [(ngModel)]="data.content">
+    </div>
+    <div class ="form-group">
+      <label for="price">price</label>
+      <input type="text" name="price" class="form-control" [(ngModel)]="data.price">
+  </div>
+    <pre></pre>
+    <button class="btn btn-primary" type="login">createBook</button>
+  </form>
+  <div *ngIf="message" class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully created book</p>
+  </div>
+      
+      <!-- <div> <h5>created book sucessfully</h5> </div>
+      -->
+
+<!-- <div class="col-md-8">
+     <div class="input-group mb-3">
+          <h6>title:</h6><br>
+         <input 
+            type="text" 
+            class="form-control"
+            placeholder="enter title" [(ngModel)]="data.title"/>
+    </div>
+     </div>
+    <div class="row">
+     <div class="col-md-7">   </div> 
+      </div>  
+      <div class="col-md-8">
+     <div class="input-group mb-3">
+      <h6>category:</h6><br>
+     <input  type="text" 
+            class="form-control"
+            placeholder="enter category" [(ngModel)]="data.category"/>
+          <div ngbDropdown>
+              <button class="btn btn-warning" id="gfg" 
+                      ngbDropdownToggle>Click Here!</button>
+              <div ngbDropdownMenu="gfg">
+                <button ngbDropdownItem>horror</button>
+                <button ngbDropdownItem>comic</button>
+                <button ngbDropdownItem>twisted</button>
+                <button ngbDropdownItem>fantasy</button>
+                <button ngbDropdownItem>love</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            </div> 
+      </div>  
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <h6>publisher:</h6><br>
+         <input 
+            type="text" 
+            class="form-control"
+            placeholder="enter publisher" [(ngModel)]="data.publisher"/>
+         </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            </div> 
+      </div>  
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <h6>publisheddate:</h6><br>
+         <input 
+            type="text" 
+            class="form-control"
+            placeholder="enter published date" [(ngModel)]="data.publishedDate"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            </div> 
+      </div>  
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <h6>email:</h6><br>
+         <input 
+            type="text" 
+            class="form-control"
+            placeholder="enter email" [(ngModel)]="data.emailAddress"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            </div> 
+      </div>  
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <h6>isBlocked:</h6><br>
+         <input 
+            type="text" 
+            class="form-control"
+            placeholder="enter isBlocked"  [(ngModel)]="data.isBlocked"/>
+          <div ngbDropdown>
+              <button class="btn btn-warning" id="gfg" 
+                      ngbDropdownToggle>Click Here!</button>
+              <div ngbDropdownMenu="gfg">
+                <button ngbDropdownItem>yes</button>
+                <button ngbDropdownItem>no</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            </div> 
+      </div>  
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <h6>price:</h6><br>
+         <input 
+            type="text" 
+            class="form-control"
+            placeholder="enter price" [(ngModel)]="data.price"/>
+          <div ngbDropdown>
+             
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            </div> 
+      </div>  
+      <pre></pre> -->
+      <!-- <button class="btn btn-primary" type="createBook" (ngsubmit)="createBook()">createbook</button>-->
+    <!-- </div>  -->

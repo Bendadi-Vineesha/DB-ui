@@ -1,0 +1,29 @@
+h3{
+    color: darkblue;
+}
+p{
+    color: blue;
+}
+h4{
+    color: black;
+   font-style: italic;
+   font-size: medium;
+}
+input[type="text"], textarea {
+    background-color : #a2d2ee; 
+    border-top-color: black;
+    border-bottom-color: black;
+    border-right-color: blue;
+    border-left-color: blue;
+}
+button{
+    border-color: black;
+}
+table, th, td {
+    border: 1px solid rgb(37, 19, 116);
+    border-radius: 10px;
+}
+label{
+    font-size: 20px;
+    color: blue;
+}

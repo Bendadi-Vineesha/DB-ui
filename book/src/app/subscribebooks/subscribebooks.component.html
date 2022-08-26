@@ -1,0 +1,61 @@
+<div class = "row">
+    <h2> subscribed books</h2>
+</div>
+<div class="list row">
+    <div class="col-md-8">
+      <div class="input-group mb-3">
+        <h4>title:</h4><br>
+       <input #title
+          type="text" 
+          class="form-control"
+          placeholder="enter title to subscribe a book"
+          
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="subscribedbooks(title.value)">
+            Subscribe
+          </button>
+          <br>
+          <br>
+          <br>
+          <div class="left" *ngIf="flag" > <h5>saved subscribe books sucessfully</h5> </div>
+        </div>
+      </div>
+       </div>  
+    </div>
+  
+<!-- <table class = "table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Publisher</th>
+            <th>PublishedDate</th>
+            <th>isActive</th>
+            <th>isBlocked</th>
+            <th>Content</th>
+            <th>Message</th>
+            <th>EmailAddress</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{book.id}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.category}}</td>
+            <td>{{book.publisher}}</td>
+            <td>{{book.publishedDate}}</td>
+            <td>{{book.isActive}}</td>
+            <td>{{book.isBlocked}}</td>
+            <td>{{book.Content}}</td>
+            <td>{{book.message}}</td>
+            <td>{{book.emailAddress}}</td>
+            <td>{{book.price}}</td>
+        </tr>
+    </tbody>
+</table> -->

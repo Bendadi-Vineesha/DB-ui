@@ -1,0 +1,29 @@
+button{
+    color:black;
+    background-color:rgb(6, 135, 241);
+  }
+  body {
+      background-color: lightblue;
+    }
+    h4{
+      text-align: center;
+      /* background-color: lightblue; */
+      color:rgb(18, 18, 196);
+      border-radius: size*3;
+      padding: size;
+      font-family: fontFam;
+      font-size: 1.2em;
+  }
+  input{
+    border-radius: 50px;
+    border: 2px solid #73AD21;
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 10px;
+    height: 10px;
+  }
+  h5{
+    text-align: center;
+    color: #0f5715;
+  }
